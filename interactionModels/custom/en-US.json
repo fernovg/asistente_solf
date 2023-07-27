@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "jugador",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "jugaIntent",
+          "samples": [
+            "player {jugador}",
+            "look for the player {jugador}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "liga",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ligasIntent",
+          "samples": [
+            "what is the information about the league {liga}",
+            "search league {liga}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nomEquipo",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "equipoIntent",
+          "samples": [
+            "details about the computer {nomEquipo}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombreLiga",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "TablaPosicionesIntent",
+          "samples": [
+            "league statistics {nombreLiga}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "solf assistant"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "liga",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "ligasIntent",
+          "samples": [
+            "cual es la informacion sobre la liga {liga}",
+            "quiero informacion sobre la liga {liga}",
+            "buscar la liga {liga}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "jugador",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "jugaIntent",
+          "samples": [
+            "busca al jugador {jugador}",
+            "jugador {jugador}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nomEquipo",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "equipoIntent",
+          "samples": [
+            "detalles sobre el equipo {nomEquipo}",
+            "que saber sobre {nomEquipo}",
+            "dame informacion sobre {nomEquipo}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nomEquipo",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "preguntaEquipoFavoritoIntent",
+          "samples": [
+            "mi equipo favorito es {nomEquipo}",
+            "quiero registrar mi equipo favorito que es {nomEquipo}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombreLiga",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "TablaPosicionesIntent",
+          "samples": [
+            "estadisticas sobre la liga {nombreLiga}",
+            "tabla de {nombreLiga}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "asistente solf"
+    }
+  }
+}
